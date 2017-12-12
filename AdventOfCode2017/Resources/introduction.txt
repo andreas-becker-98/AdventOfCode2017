@@ -1,0 +1,8 @@
+﻿:: Welcome to my attempts at solving the various
+:: problems on http://adventofcode.com/2017
+:: 
+:: Repository - https://github.com/andreas-becker-98/AdventOfCode2017
+::
+:: To run the code of part B of day A, type as "A.B"
+:: i.e.: To view day 7 part 2, type 7.2
+

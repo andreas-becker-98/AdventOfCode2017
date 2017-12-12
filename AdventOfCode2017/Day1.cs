@@ -6,21 +6,12 @@ using System.IO;
 
 namespace AdventOfCode2017
 {
-    class Day1 : Day
+    class Day1
     {
-        private bool isPartTwo;
-        private string captcha;
-
-        public Day1(int part)
+        public static void Run(string[] args)
         {
-            isPartTwo = part != 1;
-            captcha = File.ReadAllText(Program.path + "/Resources/day1.txt");
-        }
-
-        public override void Start()
-        {
-            isRunning = true;
-
+            bool isPartTwo = args[0] == "2";
+            string captcha = File.ReadAllText(Program.path + "/Resources/day1.txt");
             int length = captcha.Length;
             int step = isPartTwo ? length / 2 : 1;
             int sum = 0;
@@ -34,8 +25,6 @@ namespace AdventOfCode2017
             }
 
             Console.Write(string.Format("Output:\t{0}\n\n", sum));
-
-            isRunning = false;
         }
     }
 }

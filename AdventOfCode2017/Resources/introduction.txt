@@ -1,5 +1,7 @@
 ﻿:: Welcome to my attempts at solving the various
-:: problems on http://adventofcode.com/2017
+:: problems on http://adventofcode.com/2017.
+:: This executable will only write the results to
+:: the console.
 :: 
 :: Repository - https://github.com/andreas-becker-98/AdventOfCode2017
 ::

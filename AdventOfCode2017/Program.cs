@@ -15,26 +15,32 @@ namespace AdventOfCode2017
         {
             path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
 
-            Day day;
             string introduction = File.ReadAllText(path + "/Resources/introduction.txt");
             string input;
 
-            Start:
+        Start:
 
             Console.Clear();
             Console.Write(introduction);
 
-            AwaitInput:
+        AwaitInput:
             input = Console.ReadLine();
 
             switch (input.ToUpper())
             {
                 case "1.1":
-                    day = new Day1(1);
-                    break;
+                    Day1.Run(new string[] { "1" });
+                    goto AwaitInput;
                 case "1.2":
-                    day = new Day1(2);
-                    break;
+                    Day1.Run(new string[] { "2" });
+                    goto AwaitInput;
+                case "2.1":
+                    Day2.Run(new string[] { "1" });
+                    goto AwaitInput;
+                case "2.2":
+                    Day2.Run(new string[] { "2" });
+                    goto AwaitInput;
+
 
                 case "END":
                     goto End;
@@ -43,11 +49,7 @@ namespace AdventOfCode2017
                     goto Start;
             }
 
-            day.Start();
-
-            goto AwaitInput;
-
-            End:
+        End:
             Console.Write("");
         }
     }

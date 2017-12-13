@@ -49,6 +49,7 @@
     <Compile Include="Day6.cs" />
     <Compile Include="Day7.cs" />
     <Compile Include="Day8.cs" />
+    <Compile Include="Day9.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -57,6 +58,9 @@
     <Compile Include="Day5.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\day9.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Resources\day8.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

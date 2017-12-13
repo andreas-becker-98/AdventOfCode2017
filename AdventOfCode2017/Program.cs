@@ -53,6 +53,9 @@ namespace AdventOfCode2017
                 case "7":
                     Day7.Run(new string[] { input[1] });
                     goto AwaitInput;
+                case "8":
+                    Day8.Run(new string[] { input[1] });
+                    goto AwaitInput;
 
                 case "END":
                     goto End;

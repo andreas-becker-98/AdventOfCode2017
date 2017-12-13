@@ -51,8 +51,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <Compile Include="Day5.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\day5.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Resources\day4.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

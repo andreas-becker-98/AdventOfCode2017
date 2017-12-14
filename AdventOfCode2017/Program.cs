@@ -10,6 +10,8 @@ namespace AdventOfCode2017
 
         static void Main(string[] args)
         {
+            Console.Title = "AoC - 2017";
+
             path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
 
             string introduction = File.ReadAllText(path + "/Resources/introduction.txt");
@@ -58,6 +60,9 @@ namespace AdventOfCode2017
                     goto AwaitInput;
                 case "9":
                     Day9.Run(new string[] { input[1] });
+                    goto AwaitInput;
+                case "10":
+                    Day10.Run(new string[] { input[1] });
                     goto AwaitInput;
 
                 case "END":
